@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="store">
+
+<head>
+    <title>BookStore</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-ui-router.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body ng-controller="MainController">
+
+    <div ng-controller="DashController">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3">
+                <h1>Cabecera UAZON tienda online</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 span8 leftspan">
+            <div class="sidebar-nav">
+                <div class="navbar navbar-default" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a ui-sref="pedidos">Mis Pedidos</a>
+                        </li>
+                        <li>
+                            <a ui-sref="favoritos">Mis Favoritos</a>
+                        </li>
+                        <li>
+                            <a ui-sref="perfil">Mis Datos</a>
+                        </li>
+                        <li>
+                            <a ui-sref="home">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <h4>Bienvenido a UAZON juan</h4>
+            <p>
+                Consulta tus datos, ultimos pedidos y productos favoritos.
+            </p>
+            <div ui-view></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

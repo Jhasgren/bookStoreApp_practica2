@@ -1,0 +1,18 @@
+<div class="container" ng-controller="PedidosController as ped">
+    <table class="table">
+        <tr>
+            <th>Fecha</th>
+            <th>Num</th>
+            <th>Pedido</th>
+            <th>Estado</th>
+            <th>Total</th>
+        </tr>
+        <tr ng-repeat="pedido in ped.pd">
+            <td>{{pedido.fecha}}</td>
+            <td>{{pedido.id}}</td>
+            <td>{{pedido.resumen}}</td>
+            <td>{{pedido.estado}}</td>
+            <td>{{pedido.total}}</td>
+        </tr>
+    </table>
+</div>
